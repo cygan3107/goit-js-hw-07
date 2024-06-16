@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 2</title>
-    <link rel="stylesheet" href="./css/common.css" />
-  </head>
-  <body>
-    <p><a href="./index.html">Go back</a></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task 2</title>
+        <link rel="stylesheet" href="./css/common.css" />
+        <style>
+            .gallery {
+                display: flex;
+                gap: 10px;
+            }
 
-    <ul class="gallery"></ul>
+            .gallery li {
+                width: calc(100% / 6);
+                display: flex;
+            }
 
-    <script src="./js/task-2.js" type="module"></script>
-  </body>
+            .gallery img {
+                display: block;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="./index.html">Go back</a></p>
+
+        <ul class="gallery"></ul>
+
+        <script src="./js/task-2.js" type="module"></script>
+    </body>
 </html>
